@@ -107,7 +107,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					buttonText      : 'SELECT FILES',     // The text to use for the browse button
 					checkExisting   : false,              // The path to a server-side script that checks for existing files on the server
 					debug           : false,              // Turn on swfUpload debugging mode
-					fileObjName     : 'Filedata',         // The name of the file object to use in your server-side script
+					fileObjName     : $this.prop('name'),         // The name of the file object to use in your server-side script
 					fileSizeLimit   : 0,                  // The maximum size of an uploadable file in KB (Accepts units B KB MB GB if string, 0 for no limit)
 					fileTypeDesc    : 'All Files',        // The description for file types in the browse dialog
 					fileTypeExts    : '*.*',              // Allowed extensions in the browse dialog (server-side validation should also be used)
